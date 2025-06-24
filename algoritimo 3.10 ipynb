@@ -1,0 +1,80 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPF+KEKfez71kxn4Gety0c4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hidrovnk/algoritimo-3.10/blob/main/algoritimo%203.10%20ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mfht1eUsbT76",
+        "outputId": "64abcab6-f9ee-4d1b-ec79-f05b75707f15"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro positivo (0 ou negativo para sair): 2\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 3\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 5\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 6\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 8\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 10\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 10\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 10\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 10\n",
+            "Digite um número inteiro positivo (0 ou negativo para sair): 0\n",
+            "Média dos números pares: 8.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = 1  # número fornecido pelo usuário (inicializando com 1 para entrar no laço)\n",
+        "con = 0  # contador de números pares\n",
+        "acm = 0  # acumulador de números pares\n",
+        "\n",
+        "# Laço de repetição até n ser menor ou igual a zero\n",
+        "while n > 0:\n",
+        "    n = int(input(\"Digite um número inteiro positivo (0 ou negativo para sair): \"))\n",
+        "\n",
+        "    if n > 0 and n % 2 == 0:  # verifica se o número é par\n",
+        "        acm += n  # acumula o valor do número par\n",
+        "        con += 1  # incrementa o contador de números pares\n",
+        "\n",
+        "# Calcula e exibe a média se ao menos um número par foi digitado\n",
+        "if con > 0:\n",
+        "    MNP = acm / con\n",
+        "    print(\"Média dos números pares:\", MNP)\n",
+        "else:\n",
+        "    print(\"Nenhum número par digitado.\")1"
+      ]
+    }
+  ]
+}
